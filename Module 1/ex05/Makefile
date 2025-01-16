@@ -15,8 +15,8 @@ FLAGS    := -Wall -Wextra -Werror -std=c++98
 #                                 PROGRAM'S SRCS                               #
 ################################################################################
 
-SRCS        :=      main.cpp \
-                          Harl.cpp \
+SRCS        :=      Harl.cpp \
+                          main.cpp \
                           
 OBJS        := ${SRCS:.cpp=.o}
 
