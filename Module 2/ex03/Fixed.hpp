@@ -15,8 +15,8 @@ public:
 	Fixed(const int intValue);
 	Fixed(const float floatValue);
 	Fixed(const Fixed& other);
-	Fixed& operator=(const Fixed& other);
 
+	Fixed& operator=(const Fixed& other);
 	Fixed operator*(const Fixed& other) const;
 	Fixed operator/(const Fixed& other) const;
 	Fixed operator+(const Fixed& other) const;
