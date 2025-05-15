@@ -17,12 +17,18 @@ ClapTrap::ClapTrap(const std::string& name) {
 
 ClapTrap::ClapTrap(const ClapTrap& other) {
 	this->name = other.name;
+	this->health = other.health;
+	this->energy = other.energy;
+	this->damage = other.damage;
 	std::cout << "Copy constructor called" << std::endl;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
 	if (this != &other) {
 		this->name = other.name;
+		this->health = other.health;
+		this->energy = other.energy;
+		this->damage = other.damage;
 	}
 	std::cout << "Copy assignment operator called" << std::endl;
 	return (*this);
